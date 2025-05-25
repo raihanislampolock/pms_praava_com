@@ -28,5 +28,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code
 COPY . /app/
 
-# Set the entrypoint to run the script
-CMD ["python", "pms.py"]
+# Make start.sh executable
+RUN chmod +x /app/start.sh
+
+# Run the loop script instead of single run
+CMD ["/app/start.sh"]
