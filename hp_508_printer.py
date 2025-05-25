@@ -15,10 +15,10 @@ driver = webdriver.Firefox(options=options)
 
 def printer_508_details():
     floor_details = {
-        "Floor_1_Deo_Colour": {
-            "url": "https://10.1.0.247/",
-            "ip": "10.1.0.247"
-        },
+        # "Floor_1_Deo_Colour": {
+        #     "url": "https://10.1.0.247/",
+        #     "ip": "10.1.0.247"
+        # },
         "Floor_3_Deo_Colour": {
             "url": "https://10.0.1.243/",
             "ip": "10.0.1.243"
