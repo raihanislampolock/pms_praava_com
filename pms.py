@@ -10,6 +10,7 @@ import pytz
 
 # Constants for database connection
 DB_HOST = "20.198.153.150"
+DB_PORT = 5432
 DB_NAME = "pms"
 DB_USER = "consult"
 DB_PASSWORD = "consult1234"
@@ -23,6 +24,7 @@ def insert_printer_details(printer_details):
         # Set up database connection
         conn = psycopg2.connect(
             host=DB_HOST,
+            port=DB_PORT,
             database=DB_NAME,
             user=DB_USER,
             password=DB_PASSWORD
