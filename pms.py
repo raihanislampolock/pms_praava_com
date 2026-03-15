@@ -55,34 +55,34 @@ def insert_printer_details(printer_details):
         if conn:
             conn.close()
 
-def delete_old_printer_details():
-    conn = None
-    cursor = None
+# def delete_old_printer_details():
+#     conn = None
+#     cursor = None
 
-    try:
-        # Set up database connection
-        conn = psycopg2.connect(
-            host=DB_HOST,
-            database=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD
-        )
+#     try:
+#         # Set up database connection
+#         conn = psycopg2.connect(
+#             host=DB_HOST,
+#             database=DB_NAME,
+#             user=DB_USER,
+#             password=DB_PASSWORD
+#         )
 
         # Delete printer details older than 7 days
-        cursor = conn.cursor()
-        cursor.execute(
-            "DELETE FROM printer_details WHERE created_at < NOW() - INTERVAL '7 days'"
-        )
+        # cursor = conn.cursor()
+        # cursor.execute(
+        #     "DELETE FROM printer_details WHERE created_at < NOW() - INTERVAL '7 days'"
+        # )
 
         # Commit changes and close the database connection
-        conn.commit()
-    except Exception as e:
-        print(f"Error deleting old printer details: {e}")
-    finally:
-        if cursor:
-            cursor.close()
-        if conn:
-            conn.close()
+    #     conn.commit()
+    # except Exception as e:
+    #     print(f"Error deleting old printer details: {e}")
+    # finally:
+    #     if cursor:
+    #         cursor.close()
+    #     if conn:
+    #         conn.close()
 
 
 
@@ -95,7 +95,3 @@ brother_details = Brother.printer_brother_details()
 insert_printer_details(hp_508_details)
 insert_printer_details(canon_337_details)
 insert_printer_details(brother_details)
-
-
-# Delete old printer details from the database
-delete_old_printer_details()

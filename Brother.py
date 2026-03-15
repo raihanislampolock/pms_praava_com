@@ -8,10 +8,9 @@ import traceback
 
 def printer_brother_details():
     floor_details = {
-        "Floor_1_Fde": {"url": "http://10.1.0.248/general/status.html", "ip": "10.1.0.248"},
         "Floor_2_Fde": {"url": "http://10.1.0.250/general/status.html", "ip": "10.1.0.250"},
         "Floor_2_Nurse": {"url": "http://10.1.0.251/general/status.html", "ip": "10.1.0.251"},
-        "Floor_3_Fde": {"url": "http://10.0.2.145/general/status.html", "ip": "10.0.2.145"},
+        "Floor_3_Gcc": {"url": "http://10.0.2.145/general/status.html", "ip": "10.0.2.145"},
         "Floor_3_Deo": {"url": "http://10.0.0.226/general/status.html", "ip": "10.0.0.226"},
         "Floor_4_Fde": {"url": "http://10.1.0.243/general/status.html", "ip": "10.1.0.243"},
         "Floor_5_Fde": {"url": "http://10.1.0.246/general/status.html", "ip": "10.1.0.246"},

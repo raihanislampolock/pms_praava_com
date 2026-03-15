@@ -8,9 +8,9 @@ from selenium.webdriver.firefox.options import Options
 
 def printer_508_details():
     floor_details = {
-        "Floor_1_Deo_Colour": {
-            "url": "https://10.1.0.247/",
-            "ip": "10.1.0.247"
+        "Floor_3_Report_Delivery_Colour": {
+            "url": "https://10.0.6.95/",
+            "ip": "10.0.6.95"
         },
         "Floor_3_Deo_Colour": {
             "url": "https://10.0.1.243/",
